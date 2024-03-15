@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container {
+    background-color: rgba(214, 193, 167, 0.8); /* Set background color of container */
+    padding: 0; /* Add padding to create space between content and side margins */
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.side-margins {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+	
+	background-image: 
+        url('library.jpg'), /* Original image */
+        url('library2.jpg'); /* Flipped image */
+    background-size: cover; /* Cover the entire side margin */
+    background-position: center; /* Center the background image */
+	background-repeat: repeat-y;
+	animation: bg-animation 10s linear infinite; /* Animation to smoothly transition between images */
+
+}
+
+.side-margins {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+    background-image: 
+        url('library.jpg'), /* Original image */
+		url('library2.jpg');
+    background-size: cover; /* Cover the entire side margin */
+    background-position: center; /* Center the background image */
+	background-repeat: no-repeat, repeat-y;
+}
+
+header, footer {
+    background-color: #20471a;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Align header and footer text to the center */
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+	text-align: center;
+}
+
+p {
+    max-width: 80%; /* Limit paragraph width to 70% of the screen width */
+    margin: 0 auto; /* Center paragraphs horizontally */
+}
+
+iframe {
+    width: 80%; /* Limit iframe width to 70% of the screen width */
+    height: 500px;
+    border: none;
+    margin: 20px auto; /* Center iframes horizontally with some top and bottom margin */
+    display: block; /* Ensure iframes are displayed as block elements */
+}
+
+footer {
+    position: relative;
+    z-index: 1; /* Ensure footer is above side margins */
+}
