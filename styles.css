@@ -72,12 +72,26 @@ p {
     margin: 0 auto; /* Center paragraphs horizontally */
 }
 
-iframe {
-    width: 80%; /* Limit iframe width to 70% of the screen width */
-    height: 500px;
-    border: none;
-    margin: 20px auto; /* Center iframes horizontally with some top and bottom margin */
-    display: block; /* Ensure iframes are displayed as block elements */
+/* For larger screens (e.g., laptops) */
+@media screen and (min-width: 768px) {
+    iframe {
+        width: 80%; /* Limit iframe width to 80% of the screen width */
+        height: 500px; /* Set a fixed height for larger screens */
+        border: none;
+        margin: 20px auto; /* Center iframes horizontally with some top and bottom margin */
+        display: block; /* Ensure iframes are displayed as block elements */
+    }
+}
+
+/* For smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+    iframe {
+        width: 100%; /* Allow iframe to fill the entire width of smaller screens */
+        height: auto; /* Allow the iframe height to adjust based on content */
+        border: none;
+        margin: 20px auto; /* Center iframes horizontally with some top and bottom margin */
+        display: block; /* Ensure iframes are displayed as block elements */
+    }
 }
 
 footer {
