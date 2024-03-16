@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    background-color: rgba(214, 193, 167, 0.8); /* Set background color of container */
+    background-color: rgba(214, 193, 167, 0.9); /* Set background color of container */
     padding: 0; /* Add padding to create space between content and side margins */
 	max-width: 70%;
 	margin: 0 auto;
@@ -19,30 +19,13 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1; /* Place behind other content */
-	
-	background-image: 
-        url('library.jpg'), /* Original image */
-        url('library2.jpg'); /* Flipped image */
-    background-size: cover; /* Cover the entire side margin */
-    background-position: center; /* Center the background image */
-	background-repeat: repeat-y;
-	animation: bg-animation 10s linear infinite; /* Animation to smoothly transition between images */
-
-}
-
-.side-margins {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Place behind other content */
     background-image: 
         url('library.jpg'), /* Original image */
-		url('library2.jpg');
+		url('library2.jpg'),
+		url('library3.jpg');
     background-size: cover; /* Cover the entire side margin */
     background-position: center; /* Center the background image */
-	background-repeat: no-repeat, repeat-y;
+	background-repeat: no-repeat, repeat-y, no-repeat;
 }
 
 header, footer {
